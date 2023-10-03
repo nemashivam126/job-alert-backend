@@ -27,6 +27,6 @@ app.use('/', stateRoutes);
 app.use('/', cityRoutes);
 app.use('/', userRoutes);
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`${PORT} connected...!`);
 });
